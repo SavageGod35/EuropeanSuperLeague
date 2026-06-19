@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>European Super League | History & Records</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open Wall of ESL">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <button class="audio-toggle" id="audioToggle" aria-label="Toggle Anthem">
+        <span class="audio-icon">▶</span>
+    </button>
+
+    <div id="audioToast" class="top-audio-banner">
+        <span id="toastText">🎵 MUSIC PLAYLIST</span>
+        <button id="toastNextBtn" class="inline-skip-btn" aria-label="Next Track">➔</button>
+    </div>
+
+    <audio id="bgAudio"></audio>
+
+    <aside class="sidebar" id="sidebarPanel">
+        <button class="close-btn" id="closeMenu">&times;</button>
+        <div class="sidebar-content">
+            <h2>WALL OF ESL</h2>
+            <p class="sidebar-subtitle">European Super League Group</p>
+            <hr class="sidebar-divider">
+            
+            <ul class="quizzer-wall-list">
+                <li>
+                    <span>Aboshadi</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Aboshadi"
+                            data-manager-club="Season 4"
+                            data-manager-titles="0"
+                            data-manager-dor="0"
+                            data-manager-status="Active"
+                            data-manager-bio="> A rapidly rising contender within the ESL quiz ranks, he has established a formidable presence through a definitive, long-standing partnership alongside Kilas. Despite the lack of championship silverware, his consistent presence has made him a major threat poised for a breakthrough.">i</button>                
+                        
+                </li>
+                <li>
+                    <span>Alaska</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Alaska"
+                            data-manager-club="Season 1"
+                            data-manager-titles="3"
+                            data-manager-dor="1-Time Winner"
+                            data-manager-status="Active"
+                            data-manager-bio="> He initiated his career in close collaboration with Lihle; however, his definitive breakthrough within the ESL came only after his decision to move alone. Operating as a solo strategist, he achieved widespread dominance, securing numerous titles across the league and ultimately cementing their legacy as only the third manager in history to claim the prestigious Ballon d'Or, a milestone achieved with Omar Marmoush.">i</button>
+                </li>
+                <li>
+                    <span>Beast</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Beast"
+                            data-manager-club="Season 1"
+                            data-manager-titles="0"
+                            data-manager-dor="0"
+                            data-manager-status="Active"
+                            data-manager-bio="> Despite the absence of silverware, his career advanced in Season 5 after orchestrating a remarkable run to the UEFA Champions League Final and a home unbeaten run. This breakthrough campaign was further distinguished by a top-three finish in the Ballon d'Or rankings with Cole Palmer and his managerial in guiding the team to the prestigious Club of the Season accolade.">i</button>
+                </li>
+                <li>
+                    <span>Brendon King</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Brendon King"
+                            data-manager-club="Season 5"
+                            data-manager-titles="0"
+                            data-manager-dor="0"
+                            data-manager-status="Active"
+                            data-manager-bio="> Known for his aggressively offensive tactical philosophy, his approach ultimately failed to get results during his partnership with Lennie. With that resulted in the alliance sparking an intense, high-stakes rivalry that has since evolved into the iconic ESL Betrayal Derby.">i</button>
+                </li>
+                <li>
+                    <span>Catalyst</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Catalyst"
+                            data-manager-club="Season 1"
+                            data-manager-titles="0"
+                            data-manager-dor="0"
+                            data-manager-status="Retired"
+                            data-manager-bio="> Very hated yet very talented manager, known for his time as Chelsea manager. He knew how to bring the drama to ESL and made the league as exciting as it could be.">i</button>
+                </li>
+                <li>
+                    <span>Daylin</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Daylin"
+                            data-manager-club="SEASON 1"
+                            data-manager-titles="3"
+                            data-manager-dor="1-Time Winner"
+                            data-manager-status="Retired"
+                            data-manager-bio="> He stands as the historic, inaugural ESL League winner and the first manager to claim the prestigious Ballon D'or with Joao Felix. His era is remembered for the dominance that ultimately introduced the league's first definitive rivalry which is the historic ESL derby against Yaqeen."
+ 
+>i</button>
+                </li>
+                <li>
+                    <span>Eskay</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Eskay"
+                            data-manager-club="Season 1"
+                            data-manager-titles="5"
+                            data-manager-dor="0"
+                            data-manager-status="Active"
+                            data-manager-bio="> Having reached two major ESL finals and suffered defeat in both, he has proven his ability to navigate the tournament's highest stages, yet the definitive formula for victory remains elusive. As he approaches a potential third attempt, the question remains whether he can master the final hurdle and secure the ultimate prize.">i</button>
+                </li>
+                <li>
+                    <span>Ibra Berjawi</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Ibra Berjawi"
+                            data-manager-club="Season 1"
+                            data-manager-titles="5"
+                            data-manager-dor="0"
+                            data-manager-status="Active"
+                            data-manager-bio="> A titan of the tournament landscape. Anchors the infamous 'Draw Derby' rivalry against Jean Relenza and possesses a heavily stacked trophy cabinet. One of, if not the greatest manager in the history of ESL">i</button>
+                </li>
+                <li>
+                    <span>Jean Relenza</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Jean Relenza"
+                            data-manager-club="Season 1"
+                            data-manager-titles="4"
+                            data-manager-dor="0"
+                            data-manager-status="Active"
+                            data-manager-bio="> Consistently lethal from set-pieces and sudden-death tiebreakers. Jean remains a tier-one threat on any given competition. He bleeds Italy and one half of the infamous 'Draw Derby' against Ibra Berjawi">i</button>
+                </li>
+                <li>
+                    <span>Kele</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Kele"
+                            data-manager-club="Season 2"
+                            data-manager-titles="0"
+                            data-manager-dor="0"
+                            data-manager-status="Active"
+                            data-manager-bio="> The breakout season still awaits him after 4 seasons in the business.">i</button>
+                </li>
+                <li>
+                    <span>Kenny Moses</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Kenny Moses"
+                            data-manager-club="Season 1"
+                            data-manager-titles="2 Trophies"
+                            data-manager-dor="0"
+                            data-manager-status="Retired"
+                            data-manager-bio="> A historic ESL titleholder who knows how to step up in high-stakes domestic cup finals. Former league winner and possibly one of the most underrated managers in ESL.">i</button>
+                </li>
+                <li>
+                    <span>Kilas</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Kilas"
+                            data-manager-club="Season 1"
+                            data-manager-titles="0"
+                            data-manager-dor="0"
+                            data-manager-status="Active."
+                            data-manager-bio="> A core participant consistently pushing for a breakout top-4 qualification. His loyalty in the quiz for 6 seasons has been noticed and he aims to make something out of it by lifting his first ever title.">i</button>
+                </li>
+                <li>
+                    <span>Kyle</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Kyle"
+                            data-manager-club="Season 4"
+                            data-manager-titles="0"
+                            data-manager-dor="0"
+                            data-manager-status="Active."
+                            data-manager-bio="> Puts in all the effort and well remembered for his time alongside Lucious. His breakout season yet awaits but he has proved his skills against some of the very best in the business.">i</button>
+                </li>
+                <li>
+                    <span>Lennie</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Lennie"
+                            data-manager-club="Season 3"
+                            data-manager-titles="0"
+                            data-manager-dor="0"
+                            data-manager-status="Active"
+                            data-manager-bio="> Representing one half of the fierce 'Betrayal Derby,' he consistently pairs deep football analysis with sheer competitive grit. His tactical versatility and relentless drive makes him an unpredictable and formidable opponent for any team in the league.">i</button>
+                </li>
+                <li>
+                    <span>Lucious</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Lucious"
+                            data-manager-club="Season 1"
+                            data-manager-titles="0"
+                            data-manager-dor="0"
+                            data-manager-status="Active"
+                            data-manager-bio="> Brings composure and sharp tactical logic into the high-stress environment of league sessions. Been with the group since season 1 and has reached a European final before. He knows how to reach the biggest stages when he is hungry enough.">i</button>
+                </li>
+                <li>
+                    <span>Nasty</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Nasty"
+                            data-manager-club="Season 1"
+                            data-manager-titles="2 Trophies"
+                            data-manager-dor="0"
+                            data-manager-status="Retired"
+                            data-manager-bio="> Infamous for locking horns in the explosive 'Battle of Egos' derby. A fiercely confident and proven title winner. Retired and left a legacy that no one can replace.">i</button>
+                </li>               
+                <li>
+                    <span>Richie</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Richie"
+                            data-manager-club="Season 1"
+                            data-manager-titles="0"
+                            data-manager-dor="0"
+                            data-manager-status="Active"
+                            data-manager-bio="> A dedicated manager continuously adapting to complex quiz formats and new roster conditions. 6 seasons loyalty has made him part of the ESL family despite a trophy drought.">i</button>
+                </li>
+                <li>
+                    <span>Rk8</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Rk8"
+                            data-manager-club="Season 4"
+                            data-manager-titles="0"
+                            data-manager-dor="0"
+                            data-manager-status="Active"
+                            data-manager-bio="> A steady operational powerhouse targeting a deep playoff run in the knockout formats. A very talented manager but lacks availability to secure a title.">i</button>
+                </li>
+                <li>
+                    <span>Santiago</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Santiago"
+                            data-manager-club="Season 1"
+                            data-manager-titles="0"
+                            data-manager-dor="0"
+                            data-manager-status="Active"
+                            data-manager-bio="> Known for an aggressive, fast-finger approach on time-critical transfer windows. Known for the legendary Ronaldo 'GATEKEEP' in his debut season. He is one of the few who can taken down many tactical managers in their prime.">i</button>
+                </li>
+                <li>
+                    <span>Shinjiru Yaqeen</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Shinjiru Yaqeen"
+                            data-manager-club="Season 1"
+                            data-manager-titles="3"
+                            data-manager-dor="1-Time Winner"
+                            data-manager-status="Active Legend"
+                            data-manager-bio="> A highly explosive competitor capable of sweeping major tournaments, he has dominated every competition he has ever entered. As one half of the historic, inaugural 'ESL Derby,' his legacy is so cemented that any debate surrounding the greatest of all time remains fundamentally incomplete without the name Yaqeen.">i</button>
+                </li>
+                <li>
+                    <span>Techno</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="Techno"
+                            data-manager-club="Season 1"
+                            data-manager-titles="4 Trophies"
+                            data-manager-dor="0"
+                            data-manager-status="Active"
+                            data-manager-bio="> A dominant multiformat threat who fights on all fronts. His legendary clashes with Eskay shape the pinnacle of league history. His lack of availability in certain seasons has made it possible to have a 'GOAT DEBATE' if it wasn't for that, there wouldn't be a debate on who the true GOAT is.">i</button>
+                </li>
+                <li>
+                    <span>XO</span> 
+                    <button class="manager-info-btn" aria-label="View Info"
+                            data-manager-name="XO"
+                            data-manager-club="Season 5"
+                            data-manager-titles="0"
+                            data-manager-dor="0"
+                            data-manager-status="Active"
+                            data-manager-bio="> Brings clutch execution to the low-tier tables, fighting to break into premium tournament entries. New in the company but has fit in immediately, do not be surprised if breaks out in season 6. He has shown his ability by beating some of the top teams in the league during a very tight phase at the time.">i</button>
+                </li>                             
+                <li class="wall-awaiting">Slot 15: <em>(Awaiting...)</em></li>
+                <li class="wall-awaiting">Slot 16: <em>(Awaiting...)</em></li>
+                <li class="wall-awaiting">Slot 17: <em>(Awaiting...)</em></li>
+                <li class="wall-awaiting">Slot 18: <em>(Awaiting...)</em></li>
+                <li class="wall-awaiting">Slot 19: <em>(Awaiting...)</em></li>
+                <li class="wall-awaiting">Slot 20: <em>(Awaiting...)</em></li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <header>
+        <div class="header-container">
+            <h1>EUROPEAN SUPER LEAGUE</h1>
+            <p>| EST 2023 | Daniel |</p>
+            
+            <div class="nav-hub-links" style="margin: 15px 0 10px 0; text-align: center;">
+                <button id="openNewsroomBtn" style="display: inline-block; padding: 10px 24px; background: #ff4757; color: white; border: none; font-weight: bold; border-radius: 50px; font-size: 0.85rem; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3); transition: transform 0.2s; cursor: pointer;">
+                    📺 VISIT SKY SPORTS NEWSROOM
+                </button>
+            </div>
+
+            <div class="search-wrapper">
+                <input type="text" id="groupSearch" placeholder="🔍 Search by Quizzer or Club name...">
+            </div>
+
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="leagues">Leagues</button>
+                <button class="filter-btn" data-filter="cups">Cups</button>
+                <button class="filter-btn" data-filter="intl">International</button>
+                <button class="filter-btn" data-filter="esports">eFootball</button>
+                <button class="filter-btn" data-filter="records">Other</button>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container" id="competitionsGrid">
+        
+        <section class="competition-card leagues">
+            <h2>🏆 ESL League</h2>
+            <div class="season-list">
+                <div class="season-row">
+                    <span class="season-number">Season 1</span>
+                    <div class="winner-details">
+                        <span class="quizzer-name">Daylin</span>
+                        <span class="club-name">Liverpool</span>
+                    </div>
+                </div>                                            
+                <div class="season-row">
+                    <span class="season-number">Season 2</span>
+                    <div class="winner-details">
+                        <span class="quizzer-name">Yaqeen</span>
+                        <span class="club-name">Borussia Dortmund</span>
+                    </div>
+                </div>
+                <div class="season-row">
+                    <span class="season-number">Season 3</span>
+                    <div class="winner-details">
+                        <span class="quizzer-name">Kenny</span>
+                        <span class="club-name">Manchester United</span>
+                    </div>
+                </div>
+                <div class="season-row">
+                    <span class="season-number">Season 4</span>
+                    <div class="winner-details">
+                        <span class="quizzer-name">Nasty</span>
+                        <span class="club-name">Bayer Leverkusen</span>
+                    </div>
+                </div>
+                <div class="season-row">
+                    <span class="season-number">Season 5</span>
+                    <div class="winner-details">
+                        <span class="quizzer-name">Jean</span>
+                        <span class="club-name">Juventus</span>
+                    </div>
+                </div>
+                <div class="season-row upcoming">
+                    <span class="season-number">Season 6</span>
+                    <div class="winner-details">
+                        <span class="quizzer-name">Awaiting...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="competition-card leagues">
+            <h2>⭐ UEFA Champions League</h2>
+            <div class="season-list">
+                <div class="season-row"><span class="season-number">Season 1</span><div class="winner-details"><span class="quizzer-name">Techno</span><span class="club-name">Manchester City</span></div></div>
+                <div class="season-row"><span class="season-number">Season 2</span><div class="winner-details"><span class="quizzer-name">Daylin</span><span class="club-name">Liverpool</span></div></div>
+                <div class="season-row"><span class="season-number">Season 3</span><div class="winner-details"><span class="quizzer-name">Yaqeen</span><span class="club-name">Borussia Dortmund</span></div></div>
+                <div class="season-row"><span class="season-number">Season 4</span><div class="winner-details"><span class="quizzer-name">Ibra</span><span class="club-name">Levante UD</span></div></div>
+                <div class="season-row"><span class="season-number">Season 5</span><div class="winner-details"><span class="quizzer-name">Ibra</span><span class="club-name">Inter Miami</span></div></div>
+                <div class="season-row upcoming"><span class="season-number">Season 6</span><div class="winner-details"><span class="quizzer-name">Awaiting...</span></div></div>
+            </div>
+        </section>
+
+        <section class="competition-card cups">
+            <h2>🇬🇧 FA Cup</h2>
+            <div class="season-list">
+                <div class="season-row"><span class="season-number">Season 1</span><div class="winner-details"><span class="quizzer-name">Kenny</span><span class="club-name">Manchester United</span></div></div>
+                <div class="season-row upcoming"><span class="season-number">Season 6</span><div class="winner-details"><span class="quizzer-name">Awaiting...</span></div></div>
+            </div>
+        </section>
+
+        <section class="competition-card cups">
+            <h2>🔵 Pepsi Cup</h2>
+            <div class="season-list">
+                <div class="season-row"><span class="season-number">Season 2</span><div class="winner-details"><span class="quizzer-name">Yaqeen</span><span class="club-name">Borussia Dortmund</span></div></div>
+                <div class="season-row"><span class="season-number">Season 3</span><div class="winner-details"><span class="quizzer-name">Ibra</span><span class="club-name">Levante UD</span></div></div>
+                <div class="season-row"><span class="season-number">Season 4</span><div class="winner-details"><span class="quizzer-name">Yaqeen</span><span class="club-name">Borussia Dortmund</span></div></div>
+                <div class="season-row"><span class="season-number">Season 5</span><div class="winner-details"><span class="quizzer-name">Alaska</span><span class="club-name">Bayern Munich</span></div></div>
+                <div class="season-row upcoming"><span class="season-number">Season 6</span><div class="winner-details"><span class="quizzer-name">Awaiting...</span></div></div>
+            </div>
+        </section>
+
+        <section class="competition-card intl">
+            <h2>🌍 FIFA World Cup</h2>
+            <div class="season-list">
+                <div class="season-row"><span class="season-number">Season 1</span><div class="winner-details"><span class="quizzer-name">Techno</span><span class="club-name">Portugal</span></div></div>
+                <div class="season-row"><span class="season-number">Season 5</span><div class="winner-details"><span class="quizzer-name">Alaska</span><span class="club-name">Spain</span></div></div>
+                <div class="season-row upcoming"><span class="season-number">Season 6</span><div class="winner-details"><span class="quizzer-name">Awaiting...</span></div></div>
+            </div>
+        </section>
+
+        <section class="competition-card intl">
+            <h2>🇪🇺 Euro Cup</h2>
+            <div class="season-list">
+                <div class="season-row"><span class="season-number">Season 2</span><div class="winner-details"><span class="quizzer-name">Jean</span><span class="club-name">Italy</span></div></div>
+                <div class="season-row upcoming"><span class="season-number">Season 6</span><div class="winner-details"><span class="quizzer-name">Awaiting...</span></div></div>
+            </div>
+        </section>
+
+        <section class="competition-card esports">
+            <h2>🎮 eFootball Championship Pro</h2>
+            <div class="season-list">                
+                <div class="season-row"><span class="season-number">Season 2</span><div class="winner-details"><span class="quizzer-name">Daniel</span><span class="club-name">V1</span></div></div>
+                <div class="season-row"><span class="season-number">Season 3</span><div class="winner-details"><span class="quizzer-name">Eskay</span><span class="club-name">V2</span></div></div>
+                <div class="season-row upcoming"><span class="season-number">Season 6</span><div class="winner-details"><span class="quizzer-name">Awaiting...</span></div></div>
+            </div>
+        </section>
+
+        <section class="competition-card leagues">
+            <h2>🟠 Europa League</h2>
+            <div class="season-list">
+                <div class="season-row"><span class="season-number">Season 1</span><div class="winner-details"><span class="quizzer-name">Jean</span><span class="club-name">Juventus</span></div></div>
+                <div class="season-row"><span class="season-number">Season 2</span><div class="winner-details"><span class="quizzer-name">Lihle</span><span class="club-name">Newcastle United</span></div></div>
+                <div class="season-row"><span class="season-number">Season 3</span><div class="winner-details"><span class="quizzer-name">Nasty</span><span class="club-name">Bayer Leverkusen</span></div></div>
+                <div class="season-row"><span class="season-number">Season 5</span><div class="winner-details"><span class="quizzer-name">Techno</span><span class="club-name">Liverpool</span></div></div>              
+                <div class="season-row upcoming"><span class="season-number">Season 6</span><div class="winner-details"><span class="quizzer-name">Awaiting...</span></div></div>
+            </div>
+        </section>
+
+        <section class="competition-card leagues">
+            <h2>🟢 Europa Conference League</h2>
+            <div class="season-list">
+                <div class="season-row"><span class="season-number">Season 1</span><div class="winner-details"><span class="quizzer-name">N/A</span><span class="club-name">N/A</span></div></div>
+                <div class="season-row"><span class="season-number">Season 2</span><div class="winner-details"><span class="quizzer-name">Jean</span><span class="club-name">Juventus</span></div></div>
+                <div class="season-row upcoming"><span class="season-number">Season 6</span><div class="winner-details"><span class="quizzer-name">Awaiting...</span></div></div>
+            </div>
+        </section>
+
+        <section class="competition-card ballon-dor-card records">
+            <h2>✨ Ballon D'or ✨</h2>
+            <div class="season-list">
+                <div class="season-row"><span class="season-number">J. Felix</span><div class="winner-details"><span class="quizzer-name trophy-gold">Daylin</span></div></div>
+                <div class="season-row"><span class="season-number">J. Bellingham</span><div class="winner-details"><span class="quizzer-name trophy-gold">Yaqeen</span></div></div>
+                <div class="season-row"><span class="season-number">O. Marmoush</span><div class="winner-details"><span class="quizzer-name trophy-gold">Alaska</span></div></div>
+                <div class="season-row upcoming"><span class="season-number">Season 6</span><div class="winner-details"><span class="quizzer-name">Awaiting...</span></div></div>
+            </div>
+        </section>
+
+        <section class="competition-card ballon-dor-card records">
+            <h2>📊 Iconic ESL Rivalries</h2>
+            <div class="rivalry-list">
+                
+                <div class="rivalry-card">
+                    <div class="rivalry-versus">
+                        <span class="rival-name">Techno</span>
+                        <span class="vs-badge">VS</span>
+                        <span class="rival-name">Eskay</span>
+                    </div>
+                    <p class="rivalry-meta">The Clash Of Contenders</p>
+                </div>
+
+                <div class="rivalry-card">
+                    <div class="rivalry-versus">
+                        <span class="rival-name">Jean</span>
+                        <span class="vs-badge">VS</span>
+                        <span class="rival-name">Ibra</span>
+                    </div>
+                    <p class="rivalry-meta">The Draw Derby</p>
+                </div>
+
+                <div class="rivalry-card">
+                    <div class="rivalry-versus">
+                        <span class="rival-name">Jean</span>
+                        <span class="vs-badge">VS</span>
+                        <span class="rival-name">Nasty</span>
+                    </div>
+                    <p class="rivalry-meta">Battle Of Egos</p>
+                </div>
+
+                <div class="rivalry-card">
+                    <div class="rivalry-versus">
+                        <span class="rival-name">Daylin</span>
+                        <span class="vs-badge">VS</span>
+                        <span class="rival-name">Yaqeen</span>
+                    </div>
+                    <p class="rivalry-meta">The European Super Derby</p>
+                </div>
+
+                <div class="rivalry-card">
+                    <div class="rivalry-versus">
+                        <span class="rival-name">Brendon</span>
+                        <span class="vs-badge">VS</span>
+                        <span class="rival-name">Lennie</span>
+                    </div>
+                    <p class="rivalry-meta">The Betrayal Derby</p>
+                </div>      
+            </div>
+        </section>
+
+        <section class="competition-card trophy-cabinet-card records">
+            <h2>🏆 All-Time Trophy Cabinet</h2>
+            <div class="cabinet-list">
+                
+                <div class="cabinet-row">
+                    <div class="cabinet-user">
+                        <span class="cabinet-name">Ibra</span>
+                        <span class="cabinet-total">5 Trophies</span>
+                    </div>
+                    <div class="cabinet-display">
+                        <span class="trophy-icon" title="UEFA Champions League">⭐</span>
+                        <span class="trophy-icon" title="UEFA Champions League">⭐</span>
+                        <span class="trophy-icon" title="Pepsi Cup">🔵</span>
+                        <span class="trophy-icon" title="Pepsi Cup">🔵</span>
+                        <span class="trophy-icon" title="Pepsi Cup">🔵</span>
+                    </div>
+                </div>
+
+                <div class="cabinet-row">
+                    <div class="cabinet-user">
+                        <span class="cabinet-name">Techno</span>
+                        <span class="cabinet-total">4 Trophies</span>
+                    </div>
+                    <div class="cabinet-display">
+                        <span class="trophy-icon" title="ESL League">🏆</span>
+                        <span class="trophy-icon" title="UEFA Champions League">⭐</span>
+                        <span class="trophy-icon" title="Europa League">🟠</span>
+                        <span class="trophy-icon" title="FIFA World Cup">🌍</span>
+                    </div>
+                </div>
+
+                <div class="cabinet-row">
+                    <div class="cabinet-user">
+                        <span class="cabinet-name">Jean</span>
+                        <span class="cabinet-total">4 Trophies</span>
+                    </div>
+                    <div class="cabinet-display">
+                        <span class="trophy-icon" title="ESL League">🏆</span>
+                        <span class="trophy-icon" title="Euro Cup">🇪🇺</span>
+                        <span class="trophy-icon" title="Europa League">🟠</span>
+                        <span class="trophy-icon" title="Europa Conference League">🟢</span>
+                    </div>
+                </div>
+
+                <div class="cabinet-row">
+                    <div class="cabinet-user">
+                        <span class="cabinet-name">Daylin</span>
+                        <span class="cabinet-total">3 Trophies</span>
+                    </div>
+                    <div class="cabinet-display">
+                        <span class="trophy-icon" title="ESL League">🏆</span>
+                        <span class="trophy-icon" title="UEFA Champions League">⭐</span>
+                        <span class="trophy-icon" title="Ballon D'or">✨</span>
+                    </div>
+                </div>
+
+                <div class="cabinet-row">
+                    <div class="cabinet-user">
+                        <span class="cabinet-name">Yaqeen</span>
+                        <span class="cabinet-total">3 Trophies</span>
+                    </div>
+                    <div class="cabinet-display">
+                        <span class="trophy-icon" title="ESL League">🏆</span>
+                        <span class="trophy-icon" title="Pepsi Cup">🔵</span>
+                        <span class="trophy-icon" title="Pepsi Cup">🔵</span>
+                    </div>
+                </div>
+
+                <div class="cabinet-row">
+                    <div class="cabinet-user">
+                        <span class="cabinet-name">Alaska</span>
+                        <span class="cabinet-total">3 Trophies</span>
+                    </div>
+                    <div class="cabinet-display">
+                        <span class="trophy-icon" title="Pepsi Cup">🔵</span>
+                        <span class="trophy-icon" title="FIFA World Cup">🌍</span>
+                        <span class="trophy-icon" title="Ballon D'or">✨</span>
+                    </div>
+                </div>
+
+                <div class="cabinet-row">
+                    <div class="cabinet-user">
+                        <span class="cabinet-name">Kenny</span>
+                        <span class="cabinet-total">2 Trophies</span>
+                    </div>
+                    <div class="cabinet-display">
+                        <span class="trophy-icon" title="ESL League">🏆</span>
+                        <span class="trophy-icon" title="FA Cup">🇬🇧</span>
+                    </div>
+                </div>
+
+                <div class="cabinet-row">
+                    <div class="cabinet-user">
+                        <span class="cabinet-name">Nasty</span>
+                        <span class="cabinet-total">2 Trophies</span>
+                    </div>
+                    <div class="cabinet-display">
+                        <span class="trophy-icon" title="ESL League">🏆</span>
+                        <span class="trophy-icon" title="Europa League">🟠</span>
+                    </div>
+                </div>
+
+                <div class="cabinet-row">
+                    <div class="cabinet-user">
+                        <span class="cabinet-name">Daniel</span>
+                        <span class="cabinet-total">1 Trophy</span>
+                    </div>
+                    <div class="cabinet-display">
+                        <span class="trophy-icon" title="eFootball Championship Pro">🎮</span>
+                    </div>
+                </div>
+
+                <div class="cabinet-row">
+                    <div class="cabinet-user">
+                        <span class="cabinet-name">Eskay</span>
+                        <span class="cabinet-total">1 Trophy</span>
+                    </div>
+                    <div class="cabinet-display">
+                        <span class="trophy-icon" title="eFootball Championship Pro">🎮</span>
+                    </div>
+                </div>
+
+                <div class="cabinet-row">
+                    <div class="cabinet-user">
+                        <span class="cabinet-name">Lihle</span>
+                        <span class="cabinet-total">1 Trophy</span>
+                    </div>
+                    <div class="cabinet-display">
+                        <span class="trophy-icon" title="Europa League">🟠</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <section class="wa-join-container" style="margin-bottom: 40px;">
+        <div class="wa-join-card">
+            <h3>💼 European Super League Headquarters</h3>
+            <p>Access the Commissioner's portal to view official league management profiles, contact lines, and rate the platform.</p>
+            <button id="openHqBtn" class="wa-direct-btn" style="border: none; cursor: pointer; width: 100%; display: flex; justify-content: center; align-items: center;">
+                <span>Enter Commissioner's HQ</span>
+            </button>
+        </div>
+    </section>
+
+    <div id="hqSection" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #0b1320; z-index: 9999; overflow-y: auto; color: #ffffff; font-family: 'Poppins', sans-serif;">
+        
+        <header style="background-color: #121214; padding: 15px 20px; border-bottom: 2px solid #60efff;">
+            <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto;">
+                <button id="closeHqBtn" style="background: none; border: none; color: #ffffff; font-weight: bold; display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 1rem; font-family: inherit;"><i class="fas fa-arrow-left"></i> Main Hub</button>
+                <div style="display: flex; align-items: center; font-weight: bold; letter-spacing: 0.5px;">
+                    <span style="background-color: #00ff87; color: #0b1320; padding: 3px 8px; border-radius: 4px; font-weight: 900; margin-right: 6px; font-size: 0.85rem;">ESL</span><span style="color: #ffffff; text-transform: uppercase;">BOARDROOM</span>
+                </div>
+            </div>
+        </header>
+
+        <main style="max-width: 800px; margin: 40px auto; padding: 0 20px 60px 20px;">
+            
+            <section style="background: #162235; border-radius: 16px; padding: 30px; border-left: 5px solid #60efff; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin-bottom: 30px; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: -20px; right: -20px; font-size: 8rem; color: rgba(96, 239, 255, 0.03); font-weight: 800; pointer-events: none; user-select: none;">ESL</div>
+                
+                <div style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 25px;">
+                    <div style="width: 90px; height: 90px; background: linear-gradient(135deg, #60efff, #00ff87); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; color: #0b1320; font-weight: bold; box-shadow: 0 0 20px rgba(96,239,255,0.4); margin-bottom: 15px;">
+                        D
+                    </div>
+                    <h2 style="margin: 0; color: #ffffff; font-size: 1.8rem; font-weight: 700; letter-spacing: 0.5px;">Daniel</h2>
+                    <p style="margin: 4px 0 0 0; color: #60efff; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px;">ESL Founder & Owner</p>
+                </div>
+
+                <hr style="border: 0; height: 1px; background: rgba(255,255,255,0.08); margin: 20px 0;">
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 15px;">
+                    <div>
+                        <span style="display: block; color: #7f8c8d; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px;">Role</span>
+                        <strong style="color: #ffffff; font-size: 0.95rem;">Manager/Owner</strong>
+                    </div>
+                    <div>
+                        <span style="display: block; color: #7f8c8d; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px;">Age</span>
+                        <strong style="color: #ffffff; font-size: 0.95rem;">18 Years</strong>
+                    </div>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); margin-top: 15px;">
+                    <span style="display: block; color: #7f8c8d; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px;">Brief</span>
+                    <p style="color: #dcdde1; font-size: 0.9rem; line-height: 1.6; margin: 0;">Managing one of, if not the greatest quiz group out there. European Super League has been running successfully since 2023 and still moving forward. Daniel has been the man behind the success and obviously non of that would be possible without the managers availability aswell. </p>
+                </div>
+                                <!-- MATCH OFFICIALS & REF APPRECIATION SUB-SECTION -->
+                <div style="margin-top: 25px; padding-top: 20px; border-top: 1px dashed rgba(255, 255, 255, 0.1);">
+                    <span style="display: block; color: #00ff87; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px; font-weight: 600;">
+                        <i class="fas fa-gavel"></i> Official Match Referees & Board Crew
+                    </span>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px;">
+                        <!-- Referee 1 -->
+                        <div style="background: rgba(0, 255, 135, 0.03); border: 1px solid rgba(0, 255, 135, 0.1); padding: 10px; border-radius: 6px; display: flex; align-items: center; gap: 8px;">
+                            <div style="width: 8px; height: 8px; background: #00ff87; border-radius: 50%;"></div>
+                            <div>
+                                <strong style="display: block; font-size: 0.85rem; color: #ffffff;">Jean Relenza</strong>
+                                <span style="font-size: 0.7rem; color: #7f8c8d;">Match Official</span>
+                            </div>
+                        </div>
+
+                        <!-- Referee 2 -->
+                        <div style="background: rgba(0, 255, 135, 0.03); border: 1px solid rgba(0, 255, 135, 0.1); padding: 10px; border-radius: 6px; display: flex; align-items: center; gap: 8px;">
+                            <div style="width: 8px; height: 8px; background: #00ff87; border-radius: 50%;"></div>
+                            <div>
+                                <strong style="display: block; font-size: 0.85rem; color: #ffffff;">Alaska</strong>
+                                <span style="font-size: 0.7rem; color: #7f8c8d;">Match Official</span>
+                            </div>
+                        </div>
+
+                        <!-- Referee 3 (Optional / Add more if needed) -->
+                        <div style="background: rgba(0, 255, 135, 0.03); border: 1px solid rgba(0, 255, 135, 0.1); padding: 10px; border-radius: 6px; display: flex; align-items: center; gap: 8px;">
+                            <div style="width: 8px; height: 8px; background: #00ff87; border-radius: 50%;"></div>
+                            <div>
+                                <strong style="display: block; font-size: 0.85rem; color: #ffffff;">Ibra Berjawi</strong>
+                                <span style="font-size: 0.7rem; color: #7f8c8d;">Assistant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section style="background: #162235; border-radius: 16px; padding: 25px; border-left: 5px solid #00ff87; box-shadow: 0 10px 30px rgba(0,0,0,0.2); margin-bottom: 30px;">
+                <h3 style="margin: 0 0 15px 0; color: #ffffff; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;"><i class="fas fa-address-book" style="color: #00ff87;"></i> Official Communication Lines</h3>
+                
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <a href="https://chat.whatsapp.com/C9cJiSPFC6d9XU9T0bxPcp?s=cl&p=a&mlu=4" target="_blank" style="text-decoration: none; background: rgba(0, 255, 135, 0.08); border: 1px solid rgba(0, 255, 135, 0.2); padding: 14px; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; color: #ffffff; transition: background 0.2s;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <i class="fab fa-whatsapp" style="color: #00ff87; font-size: 1.4rem;"></i>
+                            <div>
+                                <strong style="display: block; font-size: 0.9rem;">Official ESL WhatsApp Group</strong>
+                                <span style="font-size: 0.75rem; color: #7f8c8d;">Join the official ESL group and participate in the thrilling quiz.</span>
+                            </div>
+                        </div>
+                        <i class="fas fa-external-link-alt" style="color: #7f8c8d; font-size: 0.8rem;"></i>
+                    </a>
+
+                    <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255,255,255,0.05); padding: 14px; border-radius: 8px; display: flex; align-items: center; gap: 12px;">
+                        <i class="fas fa-envelope" style="color: #60efff; font-size: 1.2rem;"></i>
+                        <div>
+                            <strong style="display: block; font-size: 0.9rem; color: #ffffff;">Inquiries/Contact</strong>
+                            <span style="font-size: 0.75rem; color: #7f8c8d;">EMAIL: Danieldelannie@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section style="background: #162235; border-radius: 16px; padding: 25px; border-left: 5px solid #ff4757; box-shadow: 0 10px 30px rgba(0,0,0,0.2); text-align: center;">
+                <h3 style="margin: 0 0 6px 0; color: #ffffff; font-size: 1.1rem;">Rate the ESL Platform</h3>
+                <p style="margin: 0 0 20px 0; color: #7f8c8d; font-size: 0.8rem;">Your real-time feedback helps improve the website. Thank you.</p>
+                
+                <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 12px;">
+                    <button id="likeBtn" style="background: rgba(0, 255, 135, 0.1); border: 1px solid #00ff87; color: #00ff87; padding: 10px 22px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; gap: 8px; font-weight: 600; font-family: inherit; transition: transform 0.2s;">
+                        <i class="fas fa-thumbs-up"></i> Like <span id="likeCount" style="background: #00ff87; color: #0b1320; padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">0</span>
+                    </button>
+                    
+                    <button id="dislikeBtn" style="background: rgba(255, 71, 87, 0.1); border: 1px solid #ff4757; color: #ff4757; padding: 10px 22px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; gap: 8px; font-weight: 600; font-family: inherit; transition: transform 0.2s;">
+                        <i class="fas fa-thumbs-down"></i> Dislike <span id="dislikeCount" style="background: #ff4757; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">0</span>
+                    </button>
+                </div>
+                <p id="ratingStatusText" style="margin: 10px 0 0 0; color: #60efff; font-size: 0.8rem; height: 12px; font-style: italic;"></p>
+            </section>
+
+        </main>
+    </div>
+
+            </a>
+        </div>
+    </section>
+
+    <div class="manager-modal" id="managerModal" role="dialog" aria-hidden="true">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="closeModalBtn">&times;</button>
+            <h3 id="modalManagerName">Manager Name</h3>
+            <hr class="modal-divider">
+            <div class="modal-body">
+                <p class="modal-field"><strong>Debut:</strong> <span id="modalManagerClub">N/A</span></p>
+                <p class="modal-field"><strong>Trophies:</strong> <span id="modalManagerTitles">N/A</span></p>
+                <p class="modal-field"><strong>Ballon d'Or:</strong> <span id="modalManagerDor">N/A</span></p>
+                <p class="modal-field"><strong>Status:</strong> <span id="modalManagerStatus">N/A</span></p>
+                <div class="modal-bio-wrapper">
+                    <strong>Biography:</strong>
+                    <p id="modalManagerBio">N/A</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <div id="newsroomSection" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #0b1320; z-index: 9999; overflow-y: auto; color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+        
+        <header style="background-color: #121214; padding: 15px 20px; border-bottom: 2px solid #ff4757;">
+            <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto;">
+                <button id="closeNewsroomBtn" style="background: none; border: none; color: #ffffff; font-weight: bold; display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 1rem; font-family: inherit;"><i class="fas fa-arrow-left"></i> Main Hub</button>
+                <div style="display: flex; align-items: center; font-weight: bold; letter-spacing: 0.5px;">
+                    <span style="background-color: #ff3344; color: #fff; padding: 3px 8px; border-radius: 4px; font-style: italic; font-weight: 900; margin-right: 6px;">SKY</span><span style="color: #ffffff; text-transform: uppercase; margin-right: 10px;">SPORTS</span> <span style="color: #55555d; border-left: 1px solid #33333a; padding-left: 10px; text-transform: uppercase; font-size: 0.9rem;">ESL NEWS</span>
+                </div>
+            </div>
+        </header>
+
+        <main style="max-width: 1200px; margin: 30px auto; padding: 0 20px 50px 20px;">
+            
+
+            <!-- ==========================================================================
+                 1. MANAGER FOCUS (Kept exactly as you provided)
+                 ========================================================================== -->
+            <section class="news-card" style="background: #162235; border-radius: 8px; padding: 0; margin-bottom: 20px; border-left: 4px solid #ffc107; overflow: hidden;">
+                <div style="width: 100%; max-height: 380px; overflow: hidden; background: #111;">
+                    <img src="image.png" alt="Manager Profile" style="width: 100%; height: auto; object-fit: cover; display: block;">
+                </div>
+                
+                <div style="padding: 20px;">
+                    <div style="color: #ffc107; font-weight: bold; margin-bottom: 10px; letter-spacing: 1px;">📋 MANAGER FOCUS</div>
+                    <h2 style="margin: 0 0 10px 0; color: #ffffff; font-size: 1.6rem;">Shinjiru Yaqeen: ESL Legend makes his return for the Fifa World Cup.</h2>
+                    <p style="font-size: 0.8rem; color: #7f8c8d; margin-bottom: 15px;">By ESL Pundit | Published: June 2026</p>
+                    <p style="color: #dcdde1; line-height: 1.6; margin: 0;">After many throught his retirement had come alongside his rival Daylin, #eslinsiders confirm that ESL legend Shinjiru Yaqeen will be making his return to ESL during the upcoming 3rd Annual Fifa World Cup Tournament.</p>
+                </div>
+            </section>
+
+            <!-- ==========================================================================
+                 2. BREAKING NEWS (UPDATED WITH IMAGE SLOT)
+                 ========================================================================== -->
+            <section class="news-card" style="background: #162235; border-radius: 8px; padding: 0; margin-bottom: 20px; border-left: 4px solid #ff4757; overflow: hidden;">
+                <div style="width: 100%; max-height: 380px; overflow: hidden; background: #111;">
+                    <img src="fifa.png" alt="Breaking News" style="width: 100%; height: auto; object-fit: cover; display: block;">
+                </div>
+                
+                <div style="padding: 20px;">
+                    <div style="color: #ff4757; font-weight: bold; margin-bottom: 10px; letter-spacing: 1px;">🚨 BREAKING NEWS</div>
+                    <h2 style="margin: 0 0 10px 0; color: #ffffff; font-size: 1.6rem;">Season 6 Launch With The 3rd Annual Fifa World Cup Tournament</h2>
+                    <p style="font-size: 0.8rem; color: #7f8c8d; margin-bottom: 15px;">By ESL Pundit | Published: June 2026</p>
+                    <p style="color: #dcdde1; line-height: 1.6; margin: 0;">The wait is over. On the 15th of June, ESL Head owner revealed that ESL season 6 will officially be launched starting with the Fifa World Cup Tournament on the 22nd of June.</p>
+                </div>
+            </section>
+
+            <!-- Split Grid Layout Column Row -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 20px;">
+                
+                <!-- ==========================================================================
+                     3. UPGRADED POWER RANKINGS CARD (UPDATED WITH IMAGE SLOT)
+                     ========================================================================== -->
+                <section class="news-card" style="background: #162235; border-radius: 12px; padding: 0; border-left: 4px solid #00ff87; box-shadow: 0 8px 24px rgba(0,0,0,0.2); position: relative; overflow: hidden;">
+                    <div style="width: 100%; max-height: 200px; overflow: hidden; background: #111;">
+                        <img src="messi.png" alt="Power Rankings" style="width: 100%; height: auto; object-fit: cover; display: block;">
+                    </div>
+                    
+                    <div style="padding: 24px;">
+                        <!-- Ambient subtle background accent -->
+                        <div style="position: absolute; bottom: 10px; right: 10px; font-size: 5rem; color: rgba(0, 255, 135, 0.02); font-weight: 900; pointer-events: none; font-family: sans-serif;">TOP 5</div>
+
+                        <div style="margin-bottom: 18px;">
+                            <h2 style="margin: 0; color: #ffffff; font-size: 1.3rem; font-family: 'Poppins', sans-serif; display: flex; align-items: center; gap: 8px;">
+                                <i class="fas fa-chart-line" style="color: #00ff87;"></i> ESL Current Power Rankings
+                            </h2>
+                            <span style="display: inline-block; font-size: 0.75rem; color: #7f8c8d; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; font-style: italic;">NOT RANKED AS OF NOW</span>
+                        </div>
+
+                        <!-- Power Ranking List Container -->
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <!-- #1 Rank (Leader) -->
+                            <div style="background: rgba(0, 255, 135, 0.05); border: 1px solid rgba(0, 255, 135, 0.15); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between;">
+                                <div style="display: flex; align-items: center; gap: 14px;">
+                                    <span style="background: #00ff87; color: #0b1320; font-weight: 900; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 0.85rem;">1</span>
+                                    <strong style="color: #ffffff; font-size: 0.95rem;">Alaska</strong>
+                                </div>
+                                <span style="font-size: 0.8rem; background: rgba(0, 255, 135, 0.1); color: #00ff87; padding: 3px 10px; border-radius: 20px; font-weight: 600;">🔼</span>
+                            </div>
+
+                            <!-- #2 Rank -->
+                            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between;">
+                                <div style="display: flex; align-items: center; gap: 14px;">
+                                    <span style="background: #60efff; color: #0b1320; font-weight: 900; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 0.85rem;">2</span>
+                                    <strong style="color: #ffffff; font-size: 0.95rem;">Ibra</strong>
+                                </div>
+                                <span style="font-size: 0.8rem; background: rgba(96, 239, 255, 0.1); color: #60efff; padding: 3px 10px; border-radius: 20px; font-weight: 600;">🔽 </span>
+                            </div>
+
+                            <!-- #3 Rank -->
+                            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between;">
+                                <div style="display: flex; align-items: center; gap: 14px;">
+                                    <span style="background: #ff4757; color: #ffffff; font-weight: 900; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 0.85rem;">3</span>
+                                    <strong style="color: #ffffff; font-size: 0.95rem;">Beast</strong>
+                                </div>
+                                <span style="font-size: 0.8rem; background: rgba(255, 71, 87, 0.1); color: #ff4757; padding: 3px 10px; border-radius: 20px; font-weight: 600;">🟰</span>
+                            </div>
+
+                            <!-- #4 Rank -->
+                            <div style="background: rgba(255, 255, 255, 0.01); border: 1px solid rgba(255, 255, 255, 0.03); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between;">
+                                <div style="display: flex; align-items: center; gap: 14px;">
+                                    <span style="background: rgba(255,255,255,0.1); color: #ffffff; font-weight: 700; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 0.85rem;">4</span>
+                                    <strong style="color: #ffffff; font-size: 0.95rem;">Techno</strong>
+                                </div>
+                                <span style="font-size: 0.8rem; background: rgba(255, 255, 255, 0.05); color: #a4b0be; padding: 3px 10px; border-radius: 20px;">🔽</span>
+                            </div>
+
+                            <!-- #5 Rank -->
+                            <div style="background: rgba(255, 255, 255, 0.01); border: 1px solid rgba(255, 255, 255, 0.03); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between;">
+                                <div style="display: flex; align-items: center; gap: 14px;">
+                                    <span style="background: rgba(255,255,255,0.1); color: #ffffff; font-weight: 700; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 0.85rem;">5</span>
+                                    <strong style="color: #ffffff; font-size: 0.95rem;">Yaqeen</strong>
+                                </div>
+                                <span style="font-size: 0.8rem; background: rgba(255, 255, 255, 0.05); color: #a4b0be; padding: 3px 10px; border-radius: 20px;">🔼</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================================================
+                     4. PRESS CONFERENCE & QUOTES (UPDATED WITH IMAGE SLOT)
+                     ========================================================================== -->
+                <section class="news-card" style="background: #162235; border-radius: 8px; padding: 0; border-left: 4px solid #60efff; overflow: hidden;">
+                    <div style="width: 100%; max-height: 200px; overflow: hidden; background: #111;">
+                        <img src="spain.png" alt="Press Conference" style="width: 100%; height: auto; object-fit: cover; display: block;">
+                    </div>
+                    
+                    <div style="padding: 20px;">
+                        <h2 style="margin-top: 0; margin-bottom: 15px; color: #ffffff; font-size: 1.3rem;">🎙️ Press Conference & Quotes</h2>
+                        <div style="background: rgba(255,255,255,0.03); padding: 12px; border-radius: 4px; margin-bottom: 12px;">
+                            <p style="font-style: italic; color: #dcdde1; margin: 0;">"The title isn't leaving my cabinet this season."</p>
+                            <strong style="color: #00ff87; font-size: 0.85rem; display: block; margin-top: 6px;">- Alaska</strong>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 European Super League Quiz Group. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

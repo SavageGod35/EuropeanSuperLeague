@@ -357,7 +357,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Initialize custom starter base seeds
     if (localStorage.getItem('esl_likes') === null) {
-        localStorage.setItem('esl_likes', '7'); 
+        localStorage.setItem('esl_likes', '18'); 
     }
     if (localStorage.getItem('esl_dislikes') === null) {
         localStorage.setItem('esl_dislikes', '0');  
